@@ -36,16 +36,16 @@ XGBoost performs best by ROC-AUC. All three model families land well above the 0
 ## Running it
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn xgboost imbalanced-learn
-python fraud_detection_analysis.py
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost imbalanced-learn jupyter
+jupyter notebook fraud_detection_analysis.ipynb
 ```
 
-The script reproduces the full pipeline end to end: data loading, cleaning, EDA, feature engineering, modeling, and evaluation, printing results and displaying charts as it goes.
+The notebook reproduces the full pipeline end to end: data loading, cleaning, EDA, feature engineering, modeling, and evaluation, with explanations and charts inline between cells.
 
-`xgboost` and `imbalanced-learn` are optional - if either isn't installed, the script falls back automatically (`HistGradientBoostingClassifier` in place of XGBoost, and the SMOTE comparison is skipped).
+`xgboost` and `imbalanced-learn` are optional - if either isn't installed, the notebook falls back automatically (`HistGradientBoostingClassifier` in place of XGBoost, and the SMOTE comparison is skipped).
 
 ## Files
 
-- `fraud_detection_analysis.py` - the full analysis pipeline
+- `fraud_detection_analysis.ipynb` - the full analysis pipeline
 - `fraud_oracle.csv` - the dataset
 - `README.md` - this file
